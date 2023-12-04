@@ -18,7 +18,7 @@ def process(s: str) -> int:
     return parseInt(forwardmatch.group(0)) * 10 + parseInt(backwardmatch.group(0)[::-1])
 
 i = 0
-with open("aoc1_1.txt", "r") as f:
+with open("2023/1/input.txt", "r") as f:
     for line in f:
         i += process(line)
 print(i)

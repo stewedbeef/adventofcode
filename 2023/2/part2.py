@@ -11,7 +11,7 @@ def process(s: str) -> int:
     return tuple(result.values())
 
 i = 0
-with open("2023/2/data.txt", "r") as file:
+with open("2023/2/input.txt", "r") as file:
     for line in file:
         r, g, b = process(line)
         print(r, g, b)
